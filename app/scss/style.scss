@@ -505,6 +505,9 @@ body{
   &__form-row {
     display: flex;
     width: 100%;
+    @media (max-width: 550px) {
+      flex-wrap: wrap;
+    }
   }
   &__form-item {
     position: relative;
@@ -517,13 +520,25 @@ body{
     }
     &.half {
       width: 50%;
+      @media (max-width: 550px) {
+        width: 100%;
+      }
       &:nth-child(odd){
         padding-right: 15px;
+        @media (max-width: 550px) {
+          padding-right: 0;
+        }
       }
       &:nth-child(even){
         padding-left: 15px;
+        @media (max-width: 550px) {
+          padding-left: 0;
+        }
         .help-form__label {
           left: 15px;
+          @media (max-width: 550px) {
+            left: 0;
+          }
         }
       }
     }
