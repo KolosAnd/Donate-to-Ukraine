@@ -33,12 +33,6 @@ function focusInputs(){
 }
 var inputsEvents = "change keyup input click";
 
-function formsubmit() {
-    $('#main_form').on('submit', function () {
-        let formData = new FormData($('#main_form'));
-        console.log(formData);
-    });
-}
 
 function validTextNumbers() {
     //never space
@@ -70,6 +64,5 @@ function validTextNumbers() {
 $(document).ready(function () {
     validTextNumbers();
     focusInputs();
-    formsubmit();
 
 });

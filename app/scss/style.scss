@@ -43,6 +43,7 @@ body{
 }
 
 .header {
+  overflow: hidden;
   background: url("../img/header-bg.png");
   padding: 37px 0 0;
   width: 100%;
@@ -135,14 +136,13 @@ body{
   }
   &__right {
     max-width: 814px;
-    margin-bottom: -77px;
+    margin-bottom: 10px;
     @media (max-width: 1440px) {
       max-width: 740px;
     }
     @media (max-width: 768px) {
       max-width: 540px;
       margin-left: auto;
-      margin-bottom: -40px;
     }
 
     img {
