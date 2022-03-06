@@ -129,19 +129,19 @@
             <form class="help-form__form" id="main_form">
                 <div class="help-form__form-row">
                     <div class="help-form__form-item half">
-                        <input required class="help-form__input input_work" minlength="2" maxlength="40" data-space="no" name="name" id="userName" type="text">
+                        <input required class="help-form__input input_work" minlength="2" autocomplete="off" maxlength="40" data-space="no" name="name" id="userName" type="text">
                         <label class="help-form__label" for="userName">Name</label>
                     </div>
                     <div class="help-form__form-item half">
-                        <input minlength="10" maxlength="320" required class="help-form__input input_work" data-space="never" name="email" id="userEmail" type="text">
+                        <input minlength="10" maxlength="320" required class="help-form__input input_work" autocomplete="off" data-space="never" name="email" id="userEmail" type="text">
                         <label class="help-form__label" for="userEmail">Email</label>
                     </div>
                 </div>
                 <div class="help-form__form-item">
-                    <input required minlength="2" class="help-form__input input_work" maxlength="150" name="description-help" id="descriptionHelp" type="text">
+                    <input required minlength="2" class="help-form__input input_work" autocomplete="off" maxlength="150" name="description-help" id="descriptionHelp" type="text">
                     <label class="help-form__label" for="descriptionHelp">How you can help us? </label>
                 </div>
-                <button type="submit" class="donate-btn">donate</button>
+                <input type="submit" class="donate-btn" value="donate">
             </form>
         </div>
     </div>

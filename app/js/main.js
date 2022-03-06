@@ -34,10 +34,25 @@ function focusInputs(){
 var inputsEvents = "change keyup input click";
 
 function formsubmit() {
-    $('#main_form').on('submit', function () {
-        let formData = new FormData($('#main_form'));
-        console.log(formData);
-    });
+    const form = document.getElementById('main_form') ;
+    form.onsubmit = async (e) =>{
+        e.preventDefault();
+        let formData = new FormData(form);
+        form.classList.add('sending');
+        let response = await fetch('../sendmail.php', {
+            method: 'POST',
+            body: formData
+        });
+
+        if(response.ok){
+            let result = await response.json();
+            alert(result.message);
+            form.reset();
+            form.classList.remove('sending');
+        }else {
+            alert('Your form has error');
+        }
+    }
 }
 
 function validTextNumbers() {

@@ -479,6 +479,9 @@ body{
   }
 
   &__form {
+    padding-top: 20px;
+    transition: all 0.3s ease;
+    position: relative;
     max-width: 690px;
     width: 100%;
     @media (max-width: 1440px) {
@@ -493,7 +496,15 @@ body{
     @media (max-width: 768px) {
       max-width: 100%;
     }
-
+    &.sending::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(4, 29, 93, 0.8) url("../img/Spinner.gif") center / 150px no-repeat;
+    }
   }
 
   @media (max-width: 768px) {
