@@ -46,9 +46,9 @@ function formsubmit() {
 
         if(response.ok){
             let result = await response.json();
-            alert(result.message);
             form.reset();
             form.classList.remove('sending');
+            window.location = "/thanks.html";
         }else {
             alert('Your form has error');
         }

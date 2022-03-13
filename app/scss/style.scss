@@ -1,5 +1,4 @@
 @import "libs";
-@import "global";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 .container {
@@ -48,7 +47,6 @@ h1 {
   font-size: 64px;
   line-height: 84px;
   text-transform: uppercase;
-
   margin: 0 0 30px;
   white-space: nowrap;
   @media (max-width: 1440px) {
@@ -177,6 +175,10 @@ h1 {
   }
   @media (max-width: 425px) {
     padding: 30px 0 ;
+  }
+
+  .donate-btn{
+    margin-top: 25px;
   }
   &__main {
     display: flex;
@@ -655,7 +657,7 @@ h1 {
     width: 100%;
   }
   p{
-    margin: 0;
+    margin: 0 0 28px;
     font-size: 18px;
     line-height: 22px;
     color: rgba(11, 22, 32, 0.8);
@@ -670,7 +672,7 @@ h1 {
   }
   h2{
     font-weight: 600;
-    margin: 0;
+    margin: 0 0 30px;
     font-size: 36px;
     line-height: 38px;
     color: #0B1620;
@@ -694,6 +696,13 @@ h1 {
     }
   }
   h3{
+    color: #0B1620;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    margin: 0 0 25px;
+  }
+  h4{
     margin: 0 0 30px;
     font-weight: bold;
     color: #0B1620;
@@ -714,7 +723,7 @@ h1 {
     padding: 116px 20px 0;
     margin: 0 auto;
     width: 100%;
-    max-width: 600px;
+    max-width: 670px;
     @media (max-width: 768px) {
       padding: 40px 20px 0;
     }
@@ -772,6 +781,20 @@ h1 {
       font-size: 13px;
       line-height: 14px;
     }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #003399;
+    img {
+      margin-left: 5px;
+    }
+  }
+
+  &__u-in-ua {
+    padding: 34px 30px;
+    border: 1px solid #011953;
   }
 }
 
