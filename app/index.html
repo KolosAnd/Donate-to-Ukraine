@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Help Ukraine</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-223162192-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-223162192-1');
+    </script>
 </head>
 
 <body>
@@ -20,7 +29,7 @@
                 <h1>Send help to <br> Ukraine Save the <br> whole Europe</h1>
                 <p>Enemies are coming and destroying our home! <br>
                     Please, help us!</p>
-                <a href="./thanks.html" class="donate-btn">donate</a>
+                <a target="_blank" href="https://secure.wayforpay.com/button/bc1378e0d88a6" class="donate-btn">donate</a>
             </div>
             <div class="header__right">
                 <img src="./img/church.svg" alt="">
@@ -36,7 +45,7 @@
             <div class="we-are__block">
                 <h2>Who we are?</h2>
                 <p>We are a team of Ukrainian creators who make brands and people better. At this time when Russia has attacked Ukraine, we are not standing aside, but with all our skills and ideas help army, people and country! We are uniting all of us around the world to win together.</p>
-                <a class="donate-btn" href="./about-us.html">more about us</a>
+                <a target="_blank" class="donate-btn" href="https://secure.wayforpay.com/button/bc1378e0d88a6">more about us</a>
             </div>
         </div>
 
@@ -119,35 +128,104 @@
         </div>
     </div>
 </section>
+<section class="stream">
+    <div class="container">
+        <div class="stream__main">
+            <div class="stream__left">
+                <h2>Join charity <br> music live stream </h2>
+                <a class="donate-btn" target="_blank" href="https://www.youtube.com/watch?v=K8r80jAPBgE">join</a>
+            </div>
+            <div class="stream__right">
+                <div class="stream__right-table">
+                    <p class="special-p">DJ sets:</p>
+                    <div class="stream__table-col">
+                        <p>Itako</p>
+                        <p>Oleksiy</p>
+                    </div>
+                    <div class="stream__table-col">
+                        <p>Pacôme Orzi b2b Ur love affair</p>
+                        <p>E-Tronik</p>
+                    </div>
+                    <div class="stream__table-col">
+                        <p>Itaho</p>
+                        <p>False Self</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<footer class="help-form">
+<section class="help-form">
     <div class="container">
         <div class="help-form__main">
             <div class="help-form__left-phrase">
                 <h2>help us save <br> our lives</h2>
+                <p>Donations to us will help to:</p>
+                    <ol>
+                        <li>Approach our victory</li>
+                        <li>Find a shelter for the refugees from the east of the country</li>
+                        <li>Support women and children that are captured in the bomb shelters.</li>
+                        <li>Support other ONGs</li>
+                        <li>Support Ukrainian Army</li>
+                    </ol>
+                <a target="_blank" class="donate-btn" href="https://secure.wayforpay.com/button/bc1378e0d88a6">Donate</a>
+
+            </div>
+            <div class="help-form__right-phrase">
+                <p>For each donation you will receive such a card-medal from us. Because you are one of the heroes. No matter what country you are from, helping us, you are mentally present in Ukraine.</p>
+                <div class="help-form__images-wrap">
+                    <div class="help-form__image-block first">
+                        <img src="./img/thnaks-card1.jpg" alt="thanks">
+                    </div>
+                    <div class="help-form__image-block">
+                        <img src="./img/thanks-card2.jpg" alt="thanks">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="help-form__form-wrap">
+            <div class="help-form__form-left-q">
+                <h2>want to help in <br> another way?</h2>
             </div>
             <form class="help-form__form" id="main_form">
                 <div class="help-form__form-row">
                     <div class="help-form__form-item half">
-                        <input required class="help-form__input input_work" minlength="2" autocomplete="off" maxlength="40" data-space="no" name="name" id="userName" type="text">
+                        <input required class="help-form__input input_work" minlength="2" maxlength="40" data-space="no" name="name" id="userName" type="text">
                         <label class="help-form__label" for="userName">Name</label>
                     </div>
                     <div class="help-form__form-item half">
-                        <input minlength="10" maxlength="320" required class="help-form__input input_work" autocomplete="off" data-space="never" name="email" id="userEmail" type="text">
+                        <input minlength="10" maxlength="320" required class="help-form__input input_work" data-space="never" name="email" id="userEmail" type="email">
                         <label class="help-form__label" for="userEmail">Email</label>
                     </div>
                 </div>
                 <div class="help-form__form-item">
-                    <input required minlength="2" class="help-form__input input_work" autocomplete="off" maxlength="150" name="description-help" id="descriptionHelp" type="text">
+                    <input required minlength="2" class="help-form__input input_work" maxlength="150" name="description-help" id="descriptionHelp" type="text">
                     <label class="help-form__label" for="descriptionHelp">How you can help us? </label>
                 </div>
-                <input type="submit" class="donate-btn" value="send">
+                <button type="submit" class="donate-btn">send</button>
             </form>
+        </div>
+    </div>
+</section>
+<footer class="footer-contacts">
+    <div class="container">
+        <div class="footer-contacts__content">
+            <div class="footer-contacts__content-item">
+                <p>sashavladyka@gmail.com</p>
+                <p>yablagodiynyk@gmail.com</p>
+            </div>
+            <div class="footer-contacts__content-item">
+                <a target="_blank" href="https://www.instagram.com/sashavladyka/">inst</a>
+                <a target="_blank" href="https://www.instagram.com/oleksiyborysko/">inst</a>
+            </div>
         </div>
     </div>
 </footer>
 
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript" id="widget-wfp-script" src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script> <script type="text/javascript">function runWfpWdgt(url){var wayforpay=new Wayforpay();wayforpay.invoice(url);}</script>
+
 </body>
 </html>

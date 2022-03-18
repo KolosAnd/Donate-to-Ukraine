@@ -48,7 +48,7 @@ function formsubmit() {
             let result = await response.json();
             form.reset();
             form.classList.remove('sending');
-            window.location = "/thanks.html";
+            window.location = "https://secure.wayforpay.com/button/bc1378e0d88a6";
         }else {
             alert('Your form has error');
         }
