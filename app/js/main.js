@@ -81,10 +81,19 @@ function validTextNumbers() {
     });
 }
 
+function smoothScroll(){
+    $(".smooth-scroll").on("click", ".smooth-scroll", function (event) {
+        event.preventDefault();
+        var link_to = $(this).attr("href");
+        var  top = $(link_to).offset().top;
+        $('body,html').stop().animate({scrollTop: top}, 1000);
+    });
+}
+
 
 $(document).ready(function () {
     validTextNumbers();
     focusInputs();
     formsubmit();
-
+    smoothScroll();
 });
